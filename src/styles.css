@@ -1,0 +1,136 @@
+/* 
+@font-face {
+  font-family: 'movement';
+  src: url('../../fonts/MovementV.ttf') format('truetype');
+} */
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+.video {
+  min-height: 99%;
+  position: fixed;
+  /* padding-bottom: 56.25%; */
+  /* padding-top: 15px; */
+
+  padding-bottom: 4.25%;
+  width: 300%; /* enlarge beyond browser width */
+  left: -100%; /* center */
+  pointer-events: none;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 100%;
+  background-color: black;
+}
+
+.interface {
+  /* position: relative; */
+  position: fixed;
+  height: 100%;
+  width: 14%;
+  margin-left: 86%;
+}
+.layout {
+  background-color: #0f0f0f;
+  text-align: center;
+  width: 99%;
+  height: 40%;
+  opacity: 80%;
+  margin-top: 10%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.interface .buttons {
+  position: absolute;
+  width: 100%;
+  top: 45%;
+}
+
+.Btn {
+  position: relative;
+  top: 70%;
+  margin-top: 20px;
+  height: 30px;
+  display: none;
+}
+
+.muteBtn {
+  position: relative;
+  top: 55%;
+
+  border: none;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.Title {
+  /* position: relative; */
+  color: white;
+  /* top: 5%; */
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.slidecontainer {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  text-align: center;
+}
+
+.listContainer {
+  position: relative;
+  top: 20px;
+  width: 70%;
+  left: 15%;
+  background-color: grey;
+  height: 85px;
+  overflow-y: scroll;
+  opacity: 70%;
+}
+
+.listItem {
+  display: list-item;
+  cursor: pointer;
+}
+
+.CountryList {
+  all: unset;
+  list-style-type: none;
+  /* justify-content: center; */
+
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (max-width: 481px) {
+  .wrapper {
+    overflow: hidden;
+    max-width: 100%;
+    background-color: blue;
+  }
+}
